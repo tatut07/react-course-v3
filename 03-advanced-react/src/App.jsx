@@ -1,7 +1,10 @@
+// import { Home, About } from './tutorial/04-project-structure/starter/Pages';
+import Starter from './tutorial/06-forms/starter/02-user-challenge';
+
 function App() {
   return (
-    <div className='container'>
-      <h2>Advanced React</h2>
+    <div className="container">
+      <Starter />
     </div>
   );
 }

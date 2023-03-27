@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
@@ -8,10 +8,15 @@ const UseEffectBasics = () => {
 
   sayHello();
 
+  useEffect(() => {
+    console.log('hello from useEffect');
+  }, []);
+  //[] this will make it run just on the initial render
+
   return (
     <div>
       <h1>value : {value}</h1>
-      <button className='btn' onClick={() => setValue(value + 1)}>
+      <button className="btn" onClick={() => setValue(value + 1)}>
         click me
       </button>
     </div>
